@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface PuzDTests : XCTestCase
+@interface PuzzleOfGemTest : XCTestCase
 
 @end
 
-@implementation PuzDTests
+@implementation PuzzleOfGemTest
 
 - (void)setUp {
     [super setUp];

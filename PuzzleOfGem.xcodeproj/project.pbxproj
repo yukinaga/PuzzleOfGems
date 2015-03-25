@@ -13,7 +13,8 @@
 		92C14F101AC0087A007C3E33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92C14F0E1AC0087A007C3E33 /* Main.storyboard */; };
 		92C14F121AC0087A007C3E33 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92C14F111AC0087A007C3E33 /* Images.xcassets */; };
 		92C14F151AC0087A007C3E33 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92C14F131AC0087A007C3E33 /* LaunchScreen.xib */; };
-		92C14F211AC0087A007C3E33 /* PuzDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C14F201AC0087A007C3E33 /* PuzDTests.m */; };
+		92C14F211AC0087A007C3E33 /* PuzzleOfGemTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C14F201AC0087A007C3E33 /* PuzzleOfGemTest.m */; };
+		92C14F2C1AC008BF007C3E33 /* Gem.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C14F2B1AC008BF007C3E33 /* Gem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		92C14F011AC0087A007C3E33 /* PuzD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuzD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		92C14F011AC0087A007C3E33 /* PuzzleOfGem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuzzleOfGem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C14F051AC0087A007C3E33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92C14F061AC0087A007C3E33 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		92C14F081AC0087A007C3E33 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -37,9 +38,12 @@
 		92C14F0F1AC0087A007C3E33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		92C14F111AC0087A007C3E33 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		92C14F141AC0087A007C3E33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		92C14F1A1AC0087A007C3E33 /* PuzDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PuzDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		92C14F1A1AC0087A007C3E33 /* PuzzleOfGemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PuzzleOfGemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C14F1F1AC0087A007C3E33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		92C14F201AC0087A007C3E33 /* PuzDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PuzDTests.m; sourceTree = "<group>"; };
+		92C14F201AC0087A007C3E33 /* PuzzleOfGemTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PuzzleOfGemTest.m; sourceTree = "<group>"; };
+		92C14F2A1AC008BF007C3E33 /* Gem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gem.h; sourceTree = "<group>"; };
+		92C14F2B1AC008BF007C3E33 /* Gem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gem.m; sourceTree = "<group>"; };
+		92C14F2D1AC10035007C3E33 /* Definisions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Definisions.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +67,8 @@
 		92C14EF81AC0087A007C3E33 = {
 			isa = PBXGroup;
 			children = (
-				92C14F031AC0087A007C3E33 /* PuzD */,
-				92C14F1D1AC0087A007C3E33 /* PuzDTests */,
+				92C14F031AC0087A007C3E33 /* PuzzleOfGem */,
+				92C14F1D1AC0087A007C3E33 /* PuzzleOfGemTests */,
 				92C14F021AC0087A007C3E33 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,24 +76,28 @@
 		92C14F021AC0087A007C3E33 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				92C14F011AC0087A007C3E33 /* PuzD.app */,
-				92C14F1A1AC0087A007C3E33 /* PuzDTests.xctest */,
+				92C14F011AC0087A007C3E33 /* PuzzleOfGem.app */,
+				92C14F1A1AC0087A007C3E33 /* PuzzleOfGemTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		92C14F031AC0087A007C3E33 /* PuzD */ = {
+		92C14F031AC0087A007C3E33 /* PuzzleOfGem */ = {
 			isa = PBXGroup;
 			children = (
 				92C14F081AC0087A007C3E33 /* AppDelegate.h */,
 				92C14F091AC0087A007C3E33 /* AppDelegate.m */,
 				92C14F0B1AC0087A007C3E33 /* ViewController.h */,
 				92C14F0C1AC0087A007C3E33 /* ViewController.m */,
+				92C14F2A1AC008BF007C3E33 /* Gem.h */,
+				92C14F2B1AC008BF007C3E33 /* Gem.m */,
+				92C14F2D1AC10035007C3E33 /* Definisions.h */,
 				92C14F0E1AC0087A007C3E33 /* Main.storyboard */,
 				92C14F111AC0087A007C3E33 /* Images.xcassets */,
 				92C14F131AC0087A007C3E33 /* LaunchScreen.xib */,
 				92C14F041AC0087A007C3E33 /* Supporting Files */,
 			);
+			name = PuzzleOfGem;
 			path = PuzD;
 			sourceTree = "<group>";
 		};
@@ -102,12 +110,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		92C14F1D1AC0087A007C3E33 /* PuzDTests */ = {
+		92C14F1D1AC0087A007C3E33 /* PuzzleOfGemTests */ = {
 			isa = PBXGroup;
 			children = (
-				92C14F201AC0087A007C3E33 /* PuzDTests.m */,
+				92C14F201AC0087A007C3E33 /* PuzzleOfGemTest.m */,
 				92C14F1E1AC0087A007C3E33 /* Supporting Files */,
 			);
+			name = PuzzleOfGemTests;
 			path = PuzDTests;
 			sourceTree = "<group>";
 		};
@@ -122,9 +131,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		92C14F001AC0087A007C3E33 /* PuzD */ = {
+		92C14F001AC0087A007C3E33 /* PuzzleOfGem */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 92C14F241AC0087A007C3E33 /* Build configuration list for PBXNativeTarget "PuzD" */;
+			buildConfigurationList = 92C14F241AC0087A007C3E33 /* Build configuration list for PBXNativeTarget "PuzzleOfGem" */;
 			buildPhases = (
 				92C14EFD1AC0087A007C3E33 /* Sources */,
 				92C14EFE1AC0087A007C3E33 /* Frameworks */,
@@ -134,14 +143,14 @@
 			);
 			dependencies = (
 			);
-			name = PuzD;
+			name = PuzzleOfGem;
 			productName = PuzD;
-			productReference = 92C14F011AC0087A007C3E33 /* PuzD.app */;
+			productReference = 92C14F011AC0087A007C3E33 /* PuzzleOfGem.app */;
 			productType = "com.apple.product-type.application";
 		};
-		92C14F191AC0087A007C3E33 /* PuzDTests */ = {
+		92C14F191AC0087A007C3E33 /* PuzzleOfGemTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 92C14F271AC0087A007C3E33 /* Build configuration list for PBXNativeTarget "PuzDTests" */;
+			buildConfigurationList = 92C14F271AC0087A007C3E33 /* Build configuration list for PBXNativeTarget "PuzzleOfGemTests" */;
 			buildPhases = (
 				92C14F161AC0087A007C3E33 /* Sources */,
 				92C14F171AC0087A007C3E33 /* Frameworks */,
@@ -152,9 +161,9 @@
 			dependencies = (
 				92C14F1C1AC0087A007C3E33 /* PBXTargetDependency */,
 			);
-			name = PuzDTests;
+			name = PuzzleOfGemTests;
 			productName = PuzDTests;
-			productReference = 92C14F1A1AC0087A007C3E33 /* PuzDTests.xctest */;
+			productReference = 92C14F1A1AC0087A007C3E33 /* PuzzleOfGemTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -175,7 +184,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 92C14EFC1AC0087A007C3E33 /* Build configuration list for PBXProject "PuzD" */;
+			buildConfigurationList = 92C14EFC1AC0087A007C3E33 /* Build configuration list for PBXProject "PuzzleOfGem" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -188,8 +197,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				92C14F001AC0087A007C3E33 /* PuzD */,
-				92C14F191AC0087A007C3E33 /* PuzDTests */,
+				92C14F001AC0087A007C3E33 /* PuzzleOfGem */,
+				92C14F191AC0087A007C3E33 /* PuzzleOfGemTests */,
 			);
 		};
 /* End PBXProject section */
@@ -220,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92C14F0D1AC0087A007C3E33 /* ViewController.m in Sources */,
+				92C14F2C1AC008BF007C3E33 /* Gem.m in Sources */,
 				92C14F0A1AC0087A007C3E33 /* AppDelegate.m in Sources */,
 				92C14F071AC0087A007C3E33 /* main.m in Sources */,
 			);
@@ -229,7 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92C14F211AC0087A007C3E33 /* PuzDTests.m in Sources */,
+				92C14F211AC0087A007C3E33 /* PuzzleOfGemTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,7 +248,7 @@
 /* Begin PBXTargetDependency section */
 		92C14F1C1AC0087A007C3E33 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 92C14F001AC0087A007C3E33 /* PuzD */;
+			target = 92C14F001AC0087A007C3E33 /* PuzzleOfGem */;
 			targetProxy = 92C14F1B1AC0087A007C3E33 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -345,7 +355,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PuzD/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PuzzleOfGem;
 			};
 			name = Debug;
 		};
@@ -355,7 +365,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PuzD/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PuzzleOfGem;
 			};
 			name = Release;
 		};
@@ -373,7 +383,7 @@
 				);
 				INFOPLIST_FILE = PuzDTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PuzzleOfGemTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PuzD.app/PuzD";
 			};
 			name = Debug;
@@ -388,7 +398,7 @@
 				);
 				INFOPLIST_FILE = PuzDTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PuzzleOfGemTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PuzD.app/PuzD";
 			};
 			name = Release;
@@ -396,7 +406,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		92C14EFC1AC0087A007C3E33 /* Build configuration list for PBXProject "PuzD" */ = {
+		92C14EFC1AC0087A007C3E33 /* Build configuration list for PBXProject "PuzzleOfGem" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				92C14F221AC0087A007C3E33 /* Debug */,
@@ -405,21 +415,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		92C14F241AC0087A007C3E33 /* Build configuration list for PBXNativeTarget "PuzD" */ = {
+		92C14F241AC0087A007C3E33 /* Build configuration list for PBXNativeTarget "PuzzleOfGem" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				92C14F251AC0087A007C3E33 /* Debug */,
 				92C14F261AC0087A007C3E33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		92C14F271AC0087A007C3E33 /* Build configuration list for PBXNativeTarget "PuzDTests" */ = {
+		92C14F271AC0087A007C3E33 /* Build configuration list for PBXNativeTarget "PuzzleOfGemTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				92C14F281AC0087A007C3E33 /* Debug */,
 				92C14F291AC0087A007C3E33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
