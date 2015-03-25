@@ -13,19 +13,8 @@
 		92C14F101AC0087A007C3E33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92C14F0E1AC0087A007C3E33 /* Main.storyboard */; };
 		92C14F121AC0087A007C3E33 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92C14F111AC0087A007C3E33 /* Images.xcassets */; };
 		92C14F151AC0087A007C3E33 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92C14F131AC0087A007C3E33 /* LaunchScreen.xib */; };
-		92C14F211AC0087A007C3E33 /* PuzzleOfGemTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C14F201AC0087A007C3E33 /* PuzzleOfGemTest.m */; };
 		92C14F2C1AC008BF007C3E33 /* Gem.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C14F2B1AC008BF007C3E33 /* Gem.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		92C14F1B1AC0087A007C3E33 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 92C14EF91AC0087A007C3E33 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 92C14F001AC0087A007C3E33;
-			remoteInfo = PuzD;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		92C14F011AC0087A007C3E33 /* PuzzleOfGem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuzzleOfGem.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,7 +27,6 @@
 		92C14F0F1AC0087A007C3E33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		92C14F111AC0087A007C3E33 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		92C14F141AC0087A007C3E33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		92C14F1A1AC0087A007C3E33 /* PuzzleOfGemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PuzzleOfGemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C14F1F1AC0087A007C3E33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92C14F201AC0087A007C3E33 /* PuzzleOfGemTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PuzzleOfGemTest.m; sourceTree = "<group>"; };
 		92C14F2A1AC008BF007C3E33 /* Gem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gem.h; sourceTree = "<group>"; };
@@ -48,13 +36,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		92C14EFE1AC0087A007C3E33 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		92C14F171AC0087A007C3E33 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -77,7 +58,6 @@
 			isa = PBXGroup;
 			children = (
 				92C14F011AC0087A007C3E33 /* PuzzleOfGem.app */,
-				92C14F1A1AC0087A007C3E33 /* PuzzleOfGemTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -148,24 +128,6 @@
 			productReference = 92C14F011AC0087A007C3E33 /* PuzzleOfGem.app */;
 			productType = "com.apple.product-type.application";
 		};
-		92C14F191AC0087A007C3E33 /* PuzzleOfGemTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 92C14F271AC0087A007C3E33 /* Build configuration list for PBXNativeTarget "PuzzleOfGemTests" */;
-			buildPhases = (
-				92C14F161AC0087A007C3E33 /* Sources */,
-				92C14F171AC0087A007C3E33 /* Frameworks */,
-				92C14F181AC0087A007C3E33 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				92C14F1C1AC0087A007C3E33 /* PBXTargetDependency */,
-			);
-			name = PuzzleOfGemTests;
-			productName = PuzDTests;
-			productReference = 92C14F1A1AC0087A007C3E33 /* PuzzleOfGemTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -177,10 +139,6 @@
 				TargetAttributes = {
 					92C14F001AC0087A007C3E33 = {
 						CreatedOnToolsVersion = 6.2;
-					};
-					92C14F191AC0087A007C3E33 = {
-						CreatedOnToolsVersion = 6.2;
-						TestTargetID = 92C14F001AC0087A007C3E33;
 					};
 				};
 			};
@@ -198,7 +156,6 @@
 			projectRoot = "";
 			targets = (
 				92C14F001AC0087A007C3E33 /* PuzzleOfGem */,
-				92C14F191AC0087A007C3E33 /* PuzzleOfGemTests */,
 			);
 		};
 /* End PBXProject section */
@@ -211,13 +168,6 @@
 				92C14F101AC0087A007C3E33 /* Main.storyboard in Resources */,
 				92C14F151AC0087A007C3E33 /* LaunchScreen.xib in Resources */,
 				92C14F121AC0087A007C3E33 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		92C14F181AC0087A007C3E33 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,23 +185,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		92C14F161AC0087A007C3E33 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				92C14F211AC0087A007C3E33 /* PuzzleOfGemTest.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		92C14F1C1AC0087A007C3E33 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 92C14F001AC0087A007C3E33 /* PuzzleOfGem */;
-			targetProxy = 92C14F1B1AC0087A007C3E33 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		92C14F0E1AC0087A007C3E33 /* Main.storyboard */ = {
@@ -369,40 +303,6 @@
 			};
 			name = Release;
 		};
-		92C14F281AC0087A007C3E33 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = PuzDTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = PuzzleOfGemTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PuzD.app/PuzD";
-			};
-			name = Debug;
-		};
-		92C14F291AC0087A007C3E33 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = PuzDTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = PuzzleOfGemTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PuzD.app/PuzD";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -420,15 +320,6 @@
 			buildConfigurations = (
 				92C14F251AC0087A007C3E33 /* Debug */,
 				92C14F261AC0087A007C3E33 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		92C14F271AC0087A007C3E33 /* Build configuration list for PBXNativeTarget "PuzzleOfGemTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				92C14F281AC0087A007C3E33 /* Debug */,
-				92C14F291AC0087A007C3E33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
